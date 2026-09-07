@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathFinder DSA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div>
+        <h1>🗺️ PathFinder DSA</h1>
+        <p>Interactive Graph & Pathfinding Algorithm Visualizer</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="controls">
+
+        <div class="control-group">
+            <label for="algorithm">Algorithm</label>
+
+            <select id="algorithm">
+                <option value="bfs">Breadth-First Search (BFS)</option>
+                <option value="dfs">Depth-First Search (DFS)</option>
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+            </select>
+        </div>
+
+        <button id="startBtn" class="primary-btn">
+            ▶ Start
+        </button>
+
+        <button id="clearPathBtn">
+            Clear Path
+        </button>
+
+        <button id="clearGridBtn">
+            Clear Grid
+        </button>
+
+        <button id="randomBtn">
+            Random Obstacles
+        </button>
+
+    </section>
+
+
+    <section class="instructions">
+
+        <div>
+            <span class="legend start"></span>
+            Start
+        </div>
+
+        <div>
+            <span class="legend end"></span>
+            End
+        </div>
+
+        <div>
+            <span class="legend wall"></span>
+            Obstacle
+        </div>
+
+        <div>
+            <span class="legend visited"></span>
+            Visited
+        </div>
+
+        <div>
+            <span class="legend path"></span>
+            Shortest Path
+        </div>
+
+    </section>
+
+
+    <section class="grid-wrapper">
+
+        <div id="grid"></div>
+
+    </section>
+
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <h3>Algorithm</h3>
+            <p id="algorithmName">BFS</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Visited Nodes</h3>
+            <p id="visitedNodes">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Path Length</h3>
+            <p id="pathLength">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Execution Time</h3>
+            <p id="executionTime">0 ms</p>
+        </div>
+
+    </section>
+
+
+    <section class="complexity">
+
+        <h2>Algorithm Complexity</h2>
+
+        <div class="complexity-grid">
+
+            <div>
+                <h3>Time Complexity</h3>
+                <p id="timeComplexity">O(V + E)</p>
+            </div>
+
+            <div>
+                <h3>Space Complexity</h3>
+                <p id="spaceComplexity">O(V)</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Built with HTML, CSS, JavaScript & Data Structures & Algorithms</p>
+</footer>
+
+<script src="js/algorithms.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
